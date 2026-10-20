@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chúc mừng 20/10</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Quicksand:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="canvas-wrap"></div>
+
+    <div class="vignette"></div>
+    <header class="hud">
+      <p class="eyebrow">20 tháng 10 · Ngày của phái đẹp</p>
+      <h1>Chúc mừng Ngày Phụ nữ Việt Nam</h1>
+      <p class="lead">
+        Gửi người con gái anh yêu.
+      </p>
+    </header>
+
+    <button class="letter-trigger" id="letter-trigger" type="button" aria-haspopup="dialog" aria-controls="love-letter">
+      <span class="letter-envelope" aria-hidden="true">
+        <span class="letter-envelope__flap"></span>
+        <span class="letter-envelope__seal">♥</span>
+      </span>
+      <span class="letter-trigger__label">Mở tấm thiệp</span>
+      <span class="letter-trigger__hint">Gửi riêng cho em</span>
+    </button>
+
+    <dialog class="letter-dialog" id="love-letter" aria-labelledby="letter-title">
+      <div class="letter-effects" aria-hidden="true"></div>
+      <article class="letter-paper">
+        <div class="letter-floral-frame" aria-hidden="true">
+          <span class="letter-flower letter-flower--top-left">✿</span>
+          <span class="letter-flower letter-flower--top-right">❀</span>
+          <span class="letter-flower letter-flower--bottom-left">❀</span>
+          <span class="letter-flower letter-flower--bottom-right">✿</span>
+        </div>
+        <button class="letter-close" type="button" aria-label="Đóng tấm thiệp">×</button>
+        <p class="letter-kicker">20 tháng 10 · Gửi em</p>
+        <h2 id="letter-title">Người con gái anh yêu</h2>
+        <p class="letter-recipient">Ngọc Phương</p>
+        <p>Chúc em luôn giữ nụ cười dịu dàng và trái tim ấm áp của mình.</p>
+        <p>Cảm ơn em đã làm những ngày bình thường của anh trở nên thật đẹp. Mong rằng bó hoa này sẽ nhắc em nhớ rằng em luôn đặc biệt.</p>
+        <p class="letter-signoff">Thương em thật nhiều <span>♥</span></p>
+      </article>
+    </dialog>
+
+    <div class="hint">
+      <span>20</span><i></i><span>10</span><small>Thân thương gửi tặng bạn</small>
+    </div>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.1/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
